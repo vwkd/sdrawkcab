@@ -28,3 +28,4 @@ ordered and unordered composite type, numbers and identifiers, support accessing
 
 - type annotation
 - destructuring
+- async
