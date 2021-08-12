@@ -13,3 +13,12 @@ I wondered If reading would be quicker if code were mirrored horizontally
 ```
 ("interesting")doSomething.c.b.a
 ```
+
+## Todo
+
+- arrays and objects
+
+ordered and unordered composite type, numbers and identifiers, support accessing elements from any direction forwards or backwards
+
+- type annotation
+- destructuring
