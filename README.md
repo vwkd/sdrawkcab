@@ -20,6 +20,8 @@ I wondered If reading would be quicker if code were mirrored horizontally
 ("interesting")doSomething.c.b.a
 ```
 
+
+
 ## Todo
 
 - type annotation
