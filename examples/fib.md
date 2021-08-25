@@ -28,6 +28,13 @@ n ->: {
 ```
 <!-- is the grouping in the else necessary? -->
 
+```
+can compute fibonacci
+    if n is smaller than 2
+        return 2
+    else
+        return sum of fibonacci of n minus 1 plus fibonacci of n minus 2
+```
 
 ```js
 function fib(n) {
