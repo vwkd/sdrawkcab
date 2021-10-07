@@ -26,7 +26,7 @@ Inefficiently recomputes each element from scratch. Also doesn't validate argume
   }
 } =: fib
 
-42 fib
+(42) fib
 ```
 
 ```js
@@ -50,6 +50,7 @@ fib(42);
 - if statement consists of conditionally executed blocks
 - braces could have been on same line as condition, separate lines for readability
 - mandatory spaces around infix operators `+`, `-` and `?=`
+- mandatory parentheses around function argument (unlike JS arrow function)
 
 
 
@@ -109,4 +110,3 @@ fib(42);
 - see simple
 - non-exhaustive if statement has "longer" syntax `::` instead of `:`
 - no optional and default arguments
-- chained function calls aren't nested
