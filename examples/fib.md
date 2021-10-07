@@ -4,7 +4,7 @@
 
 ## Simple
 
-- inefficient 
+- inefficient
 - todo:
     - validate args, n is int >= 0
     - cache results
@@ -61,7 +61,7 @@ n, cache {
         1
     } :: {
         isntCached : {
-            ((nMinus1, cache -> fib), (nMinus2, cache -> fib) -> add @ Number) ~ n -> add @ cache
+            ((nMinus1, cache) -> fib, (nMinus2, cache) -> fib) -> add @ Number ~ n -> add @ cache
         }
         n -> get @ cache <-
     }
