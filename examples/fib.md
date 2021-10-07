@@ -11,7 +11,7 @@ Inefficiently recomputes each element from scratch. Also doesn't validate argume
 - @ Number =: -
 ?= @ Boolean =: ?=
 
-n ->: {
+(n) : {
   : 0 ?= n
   {
     0
@@ -22,11 +22,11 @@ n ->: {
   }
   _
   {
-    (n - 1) -> fib + (n - 2) -> fib
+    (n - 1) fib + (n - 2) fib
   }
 } =: fib
 
-42 -> fib
+42 fib
 ```
 
 ```js
@@ -62,7 +62,7 @@ More efficient with memoization from previous elements. Still doesn't validate a
 - @ Number =: -
 ?= @ Boolean =: ?=
 
-n, cache ->: {
+(n, cache) : {
   : 0 ?= n
   {
     0
@@ -73,18 +73,18 @@ n, cache ->: {
   }
   _
   {
-    :: ! n -> has @ cache
+    :: ! (n) has @ cache
     {
-      (n - 1, cache) -> fib + (n - 2, cache) -> fib -> add @ cache
+      (((n - 1, cache) fib + (n - 2, cache)) fib) add @ cache
     }
-    n -> get @ cache
+    (n) get @ cache
   }
 } =: fib
 
--> new @ List =: cache
-(0, 1) -> add @ cache
+() new @ List =: cache
+(0, 1) add @ cache
 
-42, cache -> fib
+(42, cache) fib
 ```
 
 ```js
