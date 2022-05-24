@@ -73,7 +73,7 @@ n, cache of {
   }
   else
   {
-    ife ! n to has in cache
+    maybe ! n to has in cache
     {
       (n - 1, cache) to fib + (n - 2, cache) to fib to add in cache
     }
@@ -107,6 +107,6 @@ fib(42);
 ### Things to note
 
 - see simple
-- non-exhaustive if statement has "longer" syntax `ife` instead of `if`
+- non-exhaustive if statement has "longer" syntax `maybe` instead of `if`
 - no optional and default arguments
 - chained function calls aren't nested
