@@ -7,9 +7,9 @@
 Inefficiently recomputes each element from scratch. Also doesn't validate argument that `n` is an non-negative integer
 
 ```
-+ @ Number as +
-- @ Number as -
-?= @ Boolean as ?=
++ in Number as +
+- in Number as -
+?= in Boolean as ?=
 
 n ->: {
   : 0 ?= n
@@ -58,9 +58,9 @@ fib(42);
 More efficient with memoization from previous elements. Still doesn't validate argument that `n` is an non-negative integer
 
 ```
-+ @ Number as +
-- @ Number as -
-?= @ Boolean as ?=
++ in Number as +
+- in Number as -
+?= in Boolean as ?=
 
 n, cache ->: {
   : 0 ?= n
@@ -73,16 +73,16 @@ n, cache ->: {
   }
   _
   {
-    :: ! n -> has @ cache
+    :: ! n -> has in cache
     {
-      (n - 1, cache) -> fib + (n - 2, cache) -> fib -> add @ cache
+      (n - 1, cache) -> fib + (n - 2, cache) -> fib -> add in cache
     }
-    n -> get @ cache
+    n -> get in cache
   }
 } as fib
 
--> new @ List as cache
-(0, 1) -> add @ cache
+-> new in List as cache
+(0, 1) -> add in cache
 
 42, cache -> fib
 ```
