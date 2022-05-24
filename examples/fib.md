@@ -11,7 +11,7 @@ Inefficiently recomputes each element from scratch. Also doesn't validate argume
 - in Number as -
 ?= in Boolean as ?=
 
-n ->: {
+n of {
   : 0 ?= n
   {
     0
@@ -62,7 +62,7 @@ More efficient with memoization from previous elements. Still doesn't validate a
 - in Number as -
 ?= in Boolean as ?=
 
-n, cache ->: {
+n, cache of {
   : 0 ?= n
   {
     0
