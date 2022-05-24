@@ -20,7 +20,7 @@ n of {
   {
     1
   }
-  _
+  else
   {
     (n - 1) to fib + (n - 2) to fib
   }
@@ -71,7 +71,7 @@ n, cache of {
   {
     1
   }
-  _
+  else
   {
     ife ! n to has in cache
     {
