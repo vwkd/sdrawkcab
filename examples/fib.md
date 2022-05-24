@@ -22,11 +22,11 @@ n of {
   }
   _
   {
-    (n - 1) -> fib + (n - 2) -> fib
+    (n - 1) to fib + (n - 2) to fib
   }
 } as fib
 
-42 -> fib
+42 to fib
 ```
 
 ```js
@@ -73,18 +73,18 @@ n, cache of {
   }
   _
   {
-    :: ! n -> has in cache
+    :: ! n to has in cache
     {
-      (n - 1, cache) -> fib + (n - 2, cache) -> fib -> add in cache
+      (n - 1, cache) to fib + (n - 2, cache) to fib to add in cache
     }
-    n -> get in cache
+    n to get in cache
   }
 } as fib
 
--> new in List as cache
-(0, 1) -> add in cache
+to new in List as cache
+(0, 1) to add in cache
 
-42, cache -> fib
+42, cache to fib
 ```
 
 ```js
