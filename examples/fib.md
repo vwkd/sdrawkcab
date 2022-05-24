@@ -12,7 +12,7 @@ Inefficiently recomputes each element from scratch. Also doesn't validate argume
 ?= in Boolean as ?=
 
 n of {
-  : 0 ?= n
+  if 0 ?= n
   {
     0
   }
@@ -63,7 +63,7 @@ More efficient with memoization from previous elements. Still doesn't validate a
 ?= in Boolean as ?=
 
 n, cache of {
-  : 0 ?= n
+  if 0 ?= n
   {
     0
   }
@@ -107,6 +107,6 @@ fib(42);
 ### Things to note
 
 - see simple
-- non-exhaustive if statement has "longer" syntax `ife` instead of `:`
+- non-exhaustive if statement has "longer" syntax `ife` instead of `if`
 - no optional and default arguments
 - chained function calls aren't nested
