@@ -7,9 +7,9 @@
 Inefficiently recomputes each element from scratch. Also doesn't validate argument that `n` is an non-negative integer
 
 ```
-+ in Number as +
-- in Number as -
-?= in Boolean as ?=
++ in Number is + alias
+- in Number is - alias
+?= in Boolean is ?= alias
 
 n of {
   if 0 ?= n
@@ -24,7 +24,7 @@ n of {
   {
     (n - 1) to fib + (n - 2) to fib
   }
-} as fib
+} is fib alias
 
 42 to fib
 ```
@@ -58,9 +58,9 @@ fib(42);
 More efficient with memoization from previous elements. Still doesn't validate argument that `n` is an non-negative integer
 
 ```
-+ in Number as +
-- in Number as -
-?= in Boolean as ?=
++ in Number is + alias
+- in Number is - alias
+?= in Boolean is ?= alias
 
 n, cache of {
   if 0 ?= n
@@ -79,9 +79,9 @@ n, cache of {
     }
     n to get in cache
   }
-} as fib
+} is fib alias
 
-to new in List as cache
+to new in List is cache alias
 (0, 1) to add in cache
 
 42, cache to fib
