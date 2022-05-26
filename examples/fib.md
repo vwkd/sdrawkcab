@@ -12,7 +12,7 @@ Inefficiently recomputes each element from scratch. Also doesn't validate argume
 ?= of Boolean is ?= alias
 
 &{
-  in is n alias
+  n of in is n alias
   if 0 ?= n
   {
     0
@@ -64,7 +64,8 @@ More efficient with memoization from previous elements. Still doesn't validate a
 ?= of Boolean is ?= alias
 
 &{
-  in is (n, cache) alias
+  n in is n alias
+  cache in is cache alias
   if 0 ?= n
   {
     0
