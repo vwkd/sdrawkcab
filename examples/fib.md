@@ -7,9 +7,9 @@
 Inefficiently recomputes each element from scratch. Also doesn't validate argument that `n` is an non-negative integer
 
 ```
-+ in Number is + alias
-- in Number is - alias
-?= in Boolean is ?= alias
++ of Number is + alias
+- of Number is - alias
+?= of Boolean is ?= alias
 
 &{
   in is n alias
@@ -59,9 +59,9 @@ fib(42);
 More efficient with memoization from previous elements. Still doesn't validate argument that `n` is an non-negative integer
 
 ```
-+ in Number is + alias
-- in Number is - alias
-?= in Boolean is ?= alias
++ of Number is + alias
+- of Number is - alias
+?= of Boolean is ?= alias
 
 &{
   in is (n, cache) alias
@@ -75,16 +75,16 @@ More efficient with memoization from previous elements. Still doesn't validate a
   }
   else
   {
-    maybe ! n to has in cache
+    maybe ! n to has of cache
     {
-      (n - 1, cache) to fib + (n - 2, cache) to fib to add in cache
+      (n - 1, cache) to fib + (n - 2, cache) to fib to add of cache
     }
-    n to get in cache
+    n to get of cache
   }
 } is fib alias
 
-to new in List is cache alias
-(0, 1) to add in cache
+to new of List is cache alias
+(0, 1) to add of cache
 
 42, cache to fib
 ```
