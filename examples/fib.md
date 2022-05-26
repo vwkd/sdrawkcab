@@ -11,7 +11,8 @@ Inefficiently recomputes each element from scratch. Also doesn't validate argume
 - in Number is - alias
 ?= in Boolean is ?= alias
 
-n of {
+&{
+  in is n alias
   if 0 ?= n
   {
     0
@@ -62,7 +63,8 @@ More efficient with memoization from previous elements. Still doesn't validate a
 - in Number is - alias
 ?= in Boolean is ?= alias
 
-n, cache of {
+&{
+  in is (n, cache) alias
   if 0 ?= n
   {
     0
