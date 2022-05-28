@@ -64,8 +64,7 @@ More efficient with memoization from previous elements. Still doesn't validate a
 ?= of Boolean is ?=
 
 &{
-  n of in is n
-  cache of in is cache
+  in is [ n, cache ]
   if 0 ?= n
   {
     0
