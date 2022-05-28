@@ -78,7 +78,7 @@ More efficient with memoization from previous elements. Still doesn't validate a
   {
     maybe ! n to has of cache
     {
-      ([ n - 1 is n, cache is cache ] to fib + [ n - 2 is n, cache is cache ] to fib) to add of cache
+      ([ n - 1 is n, cache ] to fib + [ n - 2 is n, cache ] to fib) to add of cache
     }
     n to get of cache
   }
