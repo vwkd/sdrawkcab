@@ -12,7 +12,7 @@ Inefficiently recomputes each element from scratch. Also doesn't validate argume
 ?= of Boolean is ?= alias
 
 &{
-  n of in is n alias
+  in is n alias
   if 0 ?= n
   {
     0
@@ -23,7 +23,7 @@ Inefficiently recomputes each element from scratch. Also doesn't validate argume
   }
   else
   {
-    (n - 1) to fib + (n - 2) to fib
+    n - 1 to fib + n - 2 to fib
   }
 } is fib alias
 
@@ -78,7 +78,7 @@ More efficient with memoization from previous elements. Still doesn't validate a
   {
     maybe ! n to has of cache
     {
-      (n - 1, cache) to fib + (n - 2, cache) to fib to add of cache
+      ([ n - 1 is n alias, cache is cache alias ] to fib + [ n - 2 is n alias, cache is cache alias ] to fib) to add of cache
     }
     n to get of cache
   }
