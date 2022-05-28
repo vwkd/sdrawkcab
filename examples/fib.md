@@ -7,12 +7,12 @@
 Inefficiently recomputes each element from scratch. Also doesn't validate argument that `n` is an non-negative integer
 
 ```
-+ of Number is + alias
-- of Number is - alias
-?= of Boolean is ?= alias
++ of Number is +
+- of Number is -
+?= of Boolean is ?=
 
 &{
-  in is n alias
+  in is n
   if 0 ?= n
   {
     0
@@ -25,7 +25,7 @@ Inefficiently recomputes each element from scratch. Also doesn't validate argume
   {
     n - 1 to fib + n - 2 to fib
   }
-} is fib alias
+} is fib
 
 42 to fib
 ```
@@ -59,13 +59,13 @@ fib(42);
 More efficient with memoization from previous elements. Still doesn't validate argument that `n` is an non-negative integer
 
 ```
-+ of Number is + alias
-- of Number is - alias
-?= of Boolean is ?= alias
++ of Number is +
+- of Number is -
+?= of Boolean is ?=
 
 &{
-  n in is n alias
-  cache in is cache alias
+  n in is n
+  cache in is cache
   if 0 ?= n
   {
     0
@@ -78,13 +78,13 @@ More efficient with memoization from previous elements. Still doesn't validate a
   {
     maybe ! n to has of cache
     {
-      ([ n - 1 is n alias, cache is cache alias ] to fib + [ n - 2 is n alias, cache is cache alias ] to fib) to add of cache
+      ([ n - 1 is n, cache is cache ] to fib + [ n - 2 is n, cache is cache ] to fib) to add of cache
     }
     n to get of cache
   }
-} is fib alias
+} is fib
 
-to new of List is cache alias
+to new of List is cache
 (0, 1) to add of cache
 
 42, cache to fib
