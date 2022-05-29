@@ -1,8 +1,7 @@
 # TODO
 
 - rest of conditionals
-- more operators
-- sync functions
 - comments
 - type annotations
+- sync functions
 - finish Number, not only integer
