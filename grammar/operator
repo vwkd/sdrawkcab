@@ -1,16 +1,31 @@
-// ------ Boolean Operator -------
+Operations
+    PrefixOperation
+    PostfixOperation
+    InfixOperation
 
-BooleanExpressions
-    BooleanExpression
-    BooleanExpression w BooleanExpressions
+PrefixOperation
+    PrefixOperator w Expression
 
-BooleanExpression
-    Boolean
-    Boolean w BooleanOperator w Boolean
-    Boolean w BooleanOperator w Identifier
-    Identifier w BooleanOperator w Boolean
-    Identifier w BooleanOperator w Identifier
+PostfixOperation
+    Expression w PostfixOperator
 
-BooleanOperator
+InfixOperation
+    Expression w InfixOperator w Expression
+    
+PrefixOperator
+    "+"
+    "-"
+    "!"
+
+PostfixOperator
+    // todo
+
+InfixOperator
+    "+"
+    "-"
     "|"
     "&"
+
+// note: only aroundfix operator, save complexity
+Group
+    "(" w Expression w ")"

@@ -1,26 +1,25 @@
 // sdrawkcab grammar in McKeeman Form extended with comments
 
 Module
-    Statements
+    Expressions
 
-Statements
-    Statement
-    Statement n Statements
+Expressions
+    wn
+    wn Expression
+    Expression wn
+    wn Expression wn
+    Expression n Expressions
+    // TODO: doesn't allow whitespace before first
 
-// i.e. a line
-Statement
-    w
-    Expression
-    w Expression
-    Expression w
-    w Expression w
-
+// i.e. a line, trimmed of whitespace
 Expression
     Literal
     Variable
+    Operations
     VariableDeclaration
     VariableAssignment
     FunctionDeclaration
     FunctionCall
     Block
     If
+    Group

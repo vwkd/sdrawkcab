@@ -22,7 +22,6 @@ AnyChar
     UNICODE_CHARACTER
 
 // -------- Number ---------
-// todo: finish, not only integer
 
 Number
     Integer
