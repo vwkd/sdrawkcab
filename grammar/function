@@ -8,6 +8,3 @@ Block
 FunctionCall
     Expression w "to" w Identifier
     Expression w "to" w FunctionDeclaration
-
-Return
-    Expression w "out"
