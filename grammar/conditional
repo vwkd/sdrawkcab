@@ -4,8 +4,9 @@ IfElse
     If ElseIf
     If ElseIf Else
 
+// todo: don't allow any expression, e.g. variable declaration, assignment, return value, etc...?
 If
-    "if" s Condition sn Block
+    "if" s Expression sn Block
 
 ElseIf
     "else" If
@@ -13,6 +14,3 @@ ElseIf
 
 Else
     "else" sn Block
-
-Condition
-    Operations

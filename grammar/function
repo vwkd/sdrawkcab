@@ -4,7 +4,7 @@ FunctionDeclaration
 Block
     "{" Module "}"
 
-// todo: exclude expressions like variable declaration, assignment, return value, etc...?
+// todo: don't allow any expression, e.g. variable declaration, assignment, return value, etc...?
 FunctionCall
     "to" s Identifier
     "to" s FunctionDeclaration

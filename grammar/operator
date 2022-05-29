@@ -3,6 +3,7 @@ Operations
     PostfixOperation
     InfixOperation
 
+// todo: don't allow any expression, e.g. variable declaration, assignment, return value, etc...?
 PrefixOperation
     PrefixOperator s Expression
 
