@@ -29,6 +29,7 @@ String
 NonDcChars
     ""
     NonDcChar NonDcChars
+    NonDcChars "{" Expressions "}" NonDcChars
 
 NonDcChar
     AnyChar - '"'
