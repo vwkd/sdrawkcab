@@ -7,6 +7,8 @@ VariableDeclarationMutable
 
 VariableAssignment
     Expression s "is" s Identifier
+    Expression s "is" s "..."
+    Expression s "is" s ObjectDeclarationInline
 
 Variable
     Identifier

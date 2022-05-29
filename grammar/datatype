@@ -4,6 +4,7 @@ Literal
     Boolean
     None
     ObjectDeclaration
+    ObjectDeclarationInline
 
 // -------- Object ---------
 
@@ -12,6 +13,13 @@ ObjectDeclaration
 
 ObjectProperty
     Identifier s "of" s Identifier
+
+ObjectDeclarationInline
+    "[" IdentifierList "]"
+
+IdentifierList
+    s Identifier s
+    s Identifier s "," IdentifierList
 
 // -------- String ---------
 
