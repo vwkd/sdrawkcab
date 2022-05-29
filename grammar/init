@@ -1,0 +1,25 @@
+// sdrawkcab grammar in McKeeman Form extended with comments
+
+Module
+    Statements
+
+Statements
+    Statement
+    Statement n Statements
+
+// i.e. a line
+Statement
+    w
+    Expression
+    w Expression
+    Expression w
+    w Expression w
+
+// todo: finish
+Expression
+    VariableDeclaration
+    VariableAssignment
+    FunctionDeclaration
+    IfDeclaration
+    FunctionCall
+    Literal

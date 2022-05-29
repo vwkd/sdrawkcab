@@ -1,0 +1,8 @@
+FunctionDeclaration
+    "&{" FunctionBody "}"
+
+FunctionBody
+    Module
+
+FunctionCall
+    InlineExpression w "to" w Identifier

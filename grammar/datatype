@@ -1,0 +1,52 @@
+Literal
+    String
+    Number
+    Boolean
+    None
+
+// -------- String ---------
+
+String
+    '"' NonDcChars '"'
+
+NonDcChars
+    ""
+    NonDcChar NonDcChars
+
+NonDcChar
+    AnyChar - '"'
+    '\' '"'
+
+AnyChar
+    UNICODE_CHARACTER
+
+// -------- Number ---------
+// todo: finish, not only integer
+
+Number
+    Integer
+
+Integer
+    Digit
+    NonZeroDigit Digits
+
+Digits
+    Digit
+    Digit Digits
+
+Digit
+    "0" . "9"
+
+NonZeroDigit
+    "1" . "9"
+
+// -------- Boolean ---------
+
+Boolean
+    "true"
+    "false"
+
+// -------- Boolean ---------
+
+None
+    "none"

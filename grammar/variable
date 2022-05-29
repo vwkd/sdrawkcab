@@ -1,0 +1,11 @@
+VariableDeclaration
+    VariableAssignment
+    VariableDeclarationMutable
+
+VariableDeclarationMutable
+    VariableAssignment "mutable"
+
+VariableAssignment
+    Expression w "is" w Identifier
+
+// todo: Identifier
