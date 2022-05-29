@@ -5,6 +5,14 @@ Literal
     None
     ObjectDeclaration
 
+// -------- Object ---------
+
+ObjectDeclaration
+    "[" Module "]"
+
+ObjectProperty
+    Identifier s "of" s Identifier
+
 // -------- String ---------
 
 String
@@ -50,11 +58,3 @@ Boolean
 
 None
     "none"
-
-// -------- Object ---------
-
-ObjectDeclaration
-    "[" Module "]"
-
-ObjectProperty
-    Identifier w "of" w Identifier

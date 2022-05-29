@@ -6,5 +6,5 @@ Block
 
 // todo: exclude expressions like variable declaration, assignment, return value, etc...?
 FunctionCall
-    Expression w "to" w Identifier
-    Expression w "to" w FunctionDeclaration
+    Expression s "to" s Identifier
+    Expression s "to" s FunctionDeclaration

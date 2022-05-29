@@ -1,11 +1,11 @@
 If
-    "if" w Condition w Block
+    "if" s Condition sn Block
 
 ElseIf
     "else" If
 
 Else
-    "else" w Block
+    "else" sn Block
 
 Condition
     BooleanExpressions

@@ -1,15 +1,12 @@
 // sdrawkcab grammar in McKeeman Form extended with comments
 
 Module
+    sn0
     Expressions
 
 Expressions
-    wn
-    wn Expression
-    Expression wn
-    wn Expression wn
-    Expression n Expressions
-    // TODO: doesn't allow whitespace before first
+    sn0 Expression sn0
+    sn0 Expression sn0 n Expressions
 
 // i.e. a line, trimmed of whitespace
 Expression

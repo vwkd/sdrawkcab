@@ -6,10 +6,26 @@ VariableDeclarationMutable
     VariableAssignment "mutable"
 
 VariableAssignment
-    Expression w "is" w Identifier
+    Expression s "is" s Identifier
 
 Variable
     Identifier
     ObjectProperty
 
-// todo: Identifier
+// note: allows built-in syntax except white space and new line since parsing not ambiguous
+Identifier
+    NonReservedChars
+
+NonReservedChars
+    NonReservedChar
+    NonReservedChar NonReservedChars
+
+NonReservedChar
+    AnyChar - ReservedChar
+
+AnyChar
+    UNICODE_CHAR
+
+ReservedChar
+    Whitespace
+    Newline

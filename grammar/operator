@@ -4,13 +4,13 @@ Operations
     InfixOperation
 
 PrefixOperation
-    PrefixOperator w Expression
+    PrefixOperator s Expression
 
 PostfixOperation
-    Expression w PostfixOperator
+    Expression s PostfixOperator
 
 InfixOperation
-    Expression w InfixOperator w Expression
+    Expression s InfixOperator s Expression
     
 PrefixOperator
     "+"
@@ -28,4 +28,4 @@ InfixOperator
 
 // note: only aroundfix operator, save complexity
 Group
-    "(" w Expression w ")"
+    "(" sn0 Expression sn0 ")"

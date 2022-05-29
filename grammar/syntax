@@ -1,19 +1,30 @@
 // todo: comments
-// todo: empty character?
 
-wn
-    w
+sn0
+    ""
+    sn sne
+
+sn
+    s
     n
-    w wn
-    n wn
+    s sn
+    n sn
+
+n0
+    ""
+    n ne
 
 n
     NewlineChar
     NewlineChar n
+
+s0
+    ""
+    s se
     
-w
+s
     WhitespaceChar
-    WhitespaceChar w
+    WhitespaceChar s
 
 // todo: only use U+0020 SPACE to allow other characters for white space?
 WhitespaceChar
