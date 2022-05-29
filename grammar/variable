@@ -8,10 +8,6 @@ VariableAssignment
     Expression s "is" s "..."
     Expression s "is" s ObjectDeclarationInline
 
-Variable
-    Identifier
-    ObjectProperty
-
 // note: allows built-in syntax except white space and new line since parsing not ambiguous due to mandatory separation by space/newline
 Identifier
     NonReservedChars

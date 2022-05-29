@@ -10,13 +10,46 @@ Expressions
 
 // i.e. a line, trimmed of whitespace
 Expression
-    Literal
-    Variable
-    Operations
+    PrimitiveTypeExpressions
+    ComplexTypeExpression
+    VariableTypeExpression
+
+PrimitiveTypeExpressions
+    StringTypeExpression
+    NumberTypeExpression
+    BooleanTypeExpression
+    NoneTypeExpression
+
+StringTypeExpression
+    String
+
+NumberTypeExpression
+    Number
+
+BooleanTypeExpression
+    Boolean
+
+NoneTypeExpression
+    None
+
+ComplexTypeExpression
+    ObjectTypeExpression
+    FunctionTypeExpression
+
+ObjectTypeExpression
+    ObjectDeclaration
+    ObjectDeclarationInline
+
+FunctionTypeExpression
+    FunctionDeclaration
+
+VariableTypeExpression
+    Identifier
+    ObjectProperty
     VariableDeclaration
     VariableAssignment
-    FunctionDeclaration
     FunctionCall
     Block
     IfElse
     Group
+    Operations

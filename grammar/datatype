@@ -1,11 +1,3 @@
-Literal
-    String
-    Number
-    Boolean
-    None
-    ObjectDeclaration
-    ObjectDeclarationInline
-
 // -------- Object ---------
 
 ObjectDeclaration
