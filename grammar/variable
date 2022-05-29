@@ -1,9 +1,7 @@
 VariableDeclaration
-    VariableAssignment
-    VariableDeclarationMutable
-
-VariableDeclarationMutable
+    Identifier "mutable"
     VariableAssignment "mutable"
+    VariableAssignment
 
 VariableAssignment
     Expression s "is" s Identifier
@@ -14,7 +12,7 @@ Variable
     Identifier
     ObjectProperty
 
-// note: allows built-in syntax except white space and new line since parsing not ambiguous
+// note: allows built-in syntax except white space and new line since parsing not ambiguous due to mandatory separation by space/newline
 Identifier
     NonReservedChars
 
@@ -24,9 +22,6 @@ NonReservedChars
 
 NonReservedChar
     AnyChar - ReservedChar
-
-AnyChar
-    UNICODE_CHAR
 
 ReservedChar
     Whitespace
