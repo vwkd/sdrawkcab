@@ -56,3 +56,6 @@ None
 
 ObjectDeclaration
     "[" Module "]"
+
+ObjectProperty
+    Identifier w "of" w Identifier

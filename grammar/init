@@ -15,16 +15,13 @@ Statement
     Expression w
     w Expression w
 
-// todo: finish
 Expression
+    Literal
+    Variable
     VariableDeclaration
     VariableAssignment
     FunctionDeclaration
     FunctionCall
+    Return
     Block
     If
-    Literal
-    Return
-
-Return
-    Expression w "out"

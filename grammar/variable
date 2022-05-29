@@ -8,4 +8,8 @@ VariableDeclarationMutable
 VariableAssignment
     Expression w "is" w Identifier
 
+Variable
+    Identifier
+    ObjectProperty
+
 // todo: Identifier

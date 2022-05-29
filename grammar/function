@@ -4,6 +4,10 @@ FunctionDeclaration
 Block
     "{" Module "}"
 
+// todo: exclude expressions like variable declaration, assignment, return value, etc...?
 FunctionCall
-    InlineExpression w "to" w Identifier
-    InlineExpression w "to" w FunctionDeclaration
+    Expression w "to" w Identifier
+    Expression w "to" w FunctionDeclaration
+
+Return
+    Expression w "out"
