@@ -3,6 +3,7 @@ Literal
     Number
     Boolean
     None
+    ObjectDeclaration
 
 // -------- String ---------
 
@@ -46,7 +47,12 @@ Boolean
     "true"
     "false"
 
-// -------- Boolean ---------
+// -------- None ---------
 
 None
     "none"
+
+// -------- Object ---------
+
+ObjectDeclaration
+    "[" Module "]"

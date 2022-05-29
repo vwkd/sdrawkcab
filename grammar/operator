@@ -1,5 +1,16 @@
 // ------ Boolean Operator -------
 
+BooleanExpressions
+    BooleanExpression
+    BooleanExpression w BooleanExpressions
+
+BooleanExpression
+    Boolean
+    Boolean w BooleanOperator w Boolean
+    Boolean w BooleanOperator w Identifier
+    Identifier w BooleanOperator w Boolean
+    Identifier w BooleanOperator w Identifier
+
 BooleanOperator
     "|"
     "&"

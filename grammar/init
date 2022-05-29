@@ -20,6 +20,11 @@ Expression
     VariableDeclaration
     VariableAssignment
     FunctionDeclaration
-    IfDeclaration
     FunctionCall
+    Block
+    If
     Literal
+    Return
+
+Return
+    Expression w "out"

@@ -1,8 +1,9 @@
 FunctionDeclaration
-    "&{" FunctionBody "}"
+    "&" Block
 
-FunctionBody
-    Module
+Block
+    "{" Module "}"
 
 FunctionCall
     InlineExpression w "to" w Identifier
+    InlineExpression w "to" w FunctionDeclaration
