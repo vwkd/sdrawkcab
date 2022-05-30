@@ -1,8 +1,18 @@
 ￼# Function
 
-## Logic
 
-- in block `in` is `None`
+
+## Declaration
+
+- create new child scope in parent scope
+- link function to its scope for closure
+- repeat as with module
+
+
+
+## Block
+
+- set `in` to `None`
 
 
 

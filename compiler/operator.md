@@ -1,8 +1,9 @@
 # Operator
 
-## Checks
 
-- type must be compatible with operator, e.g. primitive type
+
+
+- check type is compatible with operator, e.g. primitive type
 
 
 
