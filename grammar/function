@@ -4,7 +4,6 @@ FunctionDeclaration
 Block
     "{" Module "}"
 
-// note: allows any expression (e.g. variable declaration / assignment, if else, block, etc.), true first-class support, although not encouraged
 FunctionCall
     "to" s Identifier
     "to" s FunctionDeclaration

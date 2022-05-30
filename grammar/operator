@@ -3,7 +3,6 @@ Operations
     PostfixOperation
     InfixOperation
 
-// note: save conplexity by allowing any expression (e.g. function call, variable declaration / assignment, if else, block, etc.), check at compilation that is of primitive type, alongside check that uses right operators for right types
 PrefixOperation
     PrefixOperator s Expression
 
