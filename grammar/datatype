@@ -3,12 +3,14 @@
 ObjectDeclaration
     "[" Module "]"
 
+// todo: allow computed property name using block
 ObjectProperty
     Identifier s "of" s Identifier
 
 ObjectDeclarationInline
     "[" IdentifierList "]"
 
+// todo: allow variable assignment
 IdentifierList
     s Identifier s
     s Identifier s "," IdentifierList
