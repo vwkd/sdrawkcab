@@ -8,8 +8,7 @@ Expressions
     sn0 Expression sn0
     sn0 Expression sn0 n Expressions
 
-// i.e. a line, trimmed of whitespace
-// todo: can be multiple lines actually
+// note: can be single or multiple lines, trimmed of whitespace at end
 Expression
     PrimitiveTypeExpressions
     ComplexTypeExpression

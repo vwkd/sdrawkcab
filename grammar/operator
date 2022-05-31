@@ -1,15 +1,16 @@
+// todo: refactor as everything is operation, contains partly variable assignment
 Operations
-    PrefixOperation
-    PostfixOperation
-    InfixOperation
+    PrefixOperations
+    PostfixOperations
+    InfixOperations
 
-PrefixOperation
+PrefixOperations
     PrefixOperator s Expression
 
-PostfixOperation
+PostfixOperations
     Expression s PostfixOperator
 
-InfixOperation
+InfixOperations
     Expression s InfixOperator s Expression
     
 PrefixOperator
@@ -18,7 +19,7 @@ PrefixOperator
     "!"
 
 PostfixOperator
-    // todo
+    // todo: none yet
 
 InfixOperator
     "+"
