@@ -13,16 +13,13 @@ Inefficiently recomputes each element from scratch. Also doesn't validate argume
 
 &{
   in is n
-  if 0 ?= n
-  {
+  if 0 ?= n {
     0
   }
-  else if 1 ?= n
-  {
+  else if 1 ?= n {
     1
   }
-  else
-  {
+  else {
     n - 1 to fib + n - 2 to fib
   }
 } is fib
@@ -65,18 +62,14 @@ More efficient with memoization from previous elements. Still doesn't validate a
 
 &{
   in is [ n, cache ]
-  if 0 ?= n
-  {
+  if 0 ?= n {
     0
   }
-  else if 1 ?= n
-  {
+  else if 1 ?= n {
     1
   }
-  else
-  {
-    maybe ! n to has of cache
-    {
+  else {
+    maybe ! n to has of cache {
       ([ n - 1 is n, cache ] to fib + [ n - 2 is n, cache ] to fib) to add of cache
     }
     n to get of cache
