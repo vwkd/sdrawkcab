@@ -5,11 +5,11 @@ IfElse
     If ElseIf Else
 
 If
-    "if" s Expression sn Block
+    "if" s Expression s Expression
 
 ElseIf
     "else" If
     "else" If ElseIf
 
 Else
-    "else" sn Block
+    "else" s Expression
