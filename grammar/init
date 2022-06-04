@@ -11,7 +11,7 @@ Expressions
 // note: can be single or multiple lines, trimmed of whitespace at end
 Expression
     PrimitiveTypeExpressions
-    ComplexTypeExpression
+    ObjectTypeExpression
     VariableTypeExpression
 
 PrimitiveTypeExpressions
@@ -32,16 +32,9 @@ BooleanTypeExpression
 NoneTypeExpression
     None
 
-ComplexTypeExpression
-    ObjectTypeExpression
-    FunctionTypeExpression
-
 ObjectTypeExpression
     ObjectDeclaration
     ObjectDeclarationInline
-
-FunctionTypeExpression
-    FunctionDeclaration
 
 VariableTypeExpression
     Identifier

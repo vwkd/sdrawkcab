@@ -1,11 +1,6 @@
-FunctionDeclaration
-    "&" Block
-
 Block
     "{" Module "}"
 
 FunctionCall
     "to" s Identifier
-    "to" s FunctionDeclaration
     Expression s "to" s Identifier
-    Expression s "to" s FunctionDeclaration
