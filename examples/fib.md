@@ -7,23 +7,23 @@
 Inefficiently recomputes each element from scratch. Also doesn't validate argument that `n` is an non-negative integer
 
 ```
+// "fib" sub-module
+
 + of Number is +
 - of Number is -
 ?= of Boolean is ?=
 
-&{
-  in is n
-  if 0 ?= n {
-    0
-  }
-  else if 1 ?= n {
-    1
-  }
-  else {
-    n - 1 to fib + n - 2 to fib
-  }
-} is fib
+in is n
 
+if 0 ?= n {
+  0
+} else if 1 ?= n {
+  1
+} else {
+  n - 1 to fib + n - 2 to fib
+}
+
+// parent module
 42 to fib
 ```
 
@@ -56,26 +56,26 @@ fib(42);
 More efficient with memoization from previous elements. Still doesn't validate argument that `n` is an non-negative integer
 
 ```
+// "fib" sub-module
+
 + of Number is +
 - of Number is -
 ?= of Boolean is ?=
 
-&{
-  in is [ n, cache ]
-  if 0 ?= n {
-    0
-  }
-  else if 1 ?= n {
-    1
-  }
-  else {
-    maybe ! n to has of cache {
-      ([ n - 1 is n, cache ] to fib + [ n - 2 is n, cache ] to fib) to add of cache
-    }
-    n to get of cache
-  }
-} is fib
+in is [ n, cache ]
 
+if 0 ?= n {
+  0
+} else if 1 ?= n {
+  1
+} else {
+  maybe ! n to has of cache {
+    ([ n - 1 is n, cache ] to fib + [ n - 2 is n, cache ] to fib) to add of cache
+  }
+  n to get of cache
+}
+
+// parent module
 to new of List is cache
 (0, 1) to add of cache
 
