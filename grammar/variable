@@ -20,5 +20,5 @@ NonReservedChar
     AnyChar - ReservedChar
 
 ReservedChar
-    Whitespace
-    Newline
+    ws
+    n
